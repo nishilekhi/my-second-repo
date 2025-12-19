@@ -1,0 +1,14 @@
+.nav {
+    background-color: powderblue;
+    overflow:hidden;
+}
+.nav a {
+    background-color: plum;
+    padding: 10px 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.nav a:hover {
+    background-color: pink;
+    color:purple;
+}
