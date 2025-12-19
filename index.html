@@ -13,5 +13,24 @@
         <a>Gallery</a>
         <a>Contact us</a>
     </div>
+        <section>
+            <img class="myslides" src="image.png" alt="snoopy">
+            <img class="myslides" src="image copy.png" alt="snoopy">
+        </section>
+        <script>
+            var myIndex= 0;
+            carousel();
+            function carousel() {
+                var i = 0;
+                var x = "documnet.getElementsByClassName(myslides)";
+                for(i = 0; i < x.length; i++) {
+                    x[i].style.display="none";
+                }
+                myIndex++;
+                if(myIndex > x.length) {myIndex=1}
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel,3000);
+            }
+        </script>
 </body>
 </html>
